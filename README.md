@@ -283,7 +283,7 @@ Than shows the evaluated image in an interactive window.
 </p>
 
 This comparison reflects on the original image, the APEX 1.0 and the APEX 2.0 capabilities. 
-- The first model is limited by fixed window views, weak webcam low resolution sensor and the original SVM classifier. The vast majority of the `other` part on the images is classified as `sky`, while the `sky` is classified as `cloud` at some parts. The `clouds` rough outline is visible.
+- The first model is limited by fixed window views, a weak webcam's low resolution sensor and the original SVM classifier. The vast majority of the `other` part on the images is classified as `sky`, while the `sky` is classified as `cloud` at some parts. The `clouds` rough outline is visible.
 - APEX 2.0 uses more diverse data, higher quality and resolution images and HGBDT classifier. That resulted a correctly identified `sky` part, and while all `clouds` were correctly identified, the model's conservative tendency caused some parts to be misclassified. The `other` part is mostly correctly evaluated, but at some parts, like the edge of the `cloud` is misclassified as that part don't have much training data
 > Reasoning: having a half mask, half `cloud` edge containing patch or any other patch with 1 or more masked pixels are ignored and not created as training data.
 
