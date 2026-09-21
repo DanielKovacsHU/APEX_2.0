@@ -321,7 +321,7 @@ The last comparison shows a very difficult classification problem. The image was
 - Experiment with more and better feature sets.
 - If the model is robust enough, use the cloud to sky ratio, average Value (brightness) of clouds, the sky Hue (color) and others as a statistical measurements or datapoints (number of days with no clouds etc.).
 - Experiment with deploying the model on embedded systems and evaluate its performance.
-- Test the model with more types of cameras, evaluate the model performance change.
+- Test the model with more types of cameras, evaluate the model's performance change.
 - Apply the model to video data.
 - Estimate wind direction by analyzing the direction in which cloud regions appear and disappear in the video (little more complex than that, but good starting point).
 - Add other useful functions to the `use_apex_HGBDT.ipynb` notebook like a mode for image or video source, choose their own colors for evaluation, the patch and stride size and many more.
