@@ -312,17 +312,17 @@ Another comparison is demonstrating that the more complex model has the ability 
 
 </p>
 
-The last comparison shows a very difficult classification problem. The image was took at 10km height, has lower positioned high density `clouds` and higher low density ones. The model correctly recognize the wing of the plane as `other` and the higher density `clouds` most part (wrongly assumes the dark spot inside it as `other`). Also APEX 2.0 successfully recognizes, that the sun is not a bright `cloud` or `sky` part, but something in the `other` category. The sun surrounding is correctly recognized as `clouds` and so does the `sky` part below it. At higher parts the model struggles and misclassify the `clouds` to `sky` and `other` class.
+The last comparison shows a very difficult classification problem. The image was took at 10km height, has lower positioned high density `clouds` and higher low density ones. The model correctly recognize the wing of the plane as `other` and the higher density `clouds` most part (but wrongly assumes that the dark spot inside them is `other` class). Also APEX 2.0 successfully recognizes that the sun is not a bright `cloud` or `sky` part, but something in the `other` category. The sun surrounding is correctly recognized as `clouds` and also recognized the `sky` part below it. At higher parts the model struggles and misclassify the `clouds` to `sky` or `other` class.
 
 ## 6. Future Improvements
 
-- Add more images taken at night, including different levels of cloud coverage.
+- Add more images taken at night, with different levels of cloud coverage.
 - Remove the 0–180 scaling.
 - Experiment with more and better feature sets.
-- If the model is robust enough, use the class ratio as a statistical measure.
+- If the model is robust enough, use the cloud to sky ratio, average Value (brightness) of clouds, the sky Hue (color) and others as a statistical measurements or datapoints (number of days with no clouds etc.).
 - Experiment with deploying the model on embedded systems and evaluate its performance.
-- Test the model with different types of cameras.
+- Test the model with more types of cameras, evaluate the model performance change.
 - Apply the model to video data.
-- Estimate wind direction by analyzing the direction in which cloud regions appear and disappear in the video.
-- Add other useful features to the `use_apex_HGBDT.ipynb` notebook.
+- Estimate wind direction by analyzing the direction in which cloud regions appear and disappear in the video (little more complex than that, but good starting point).
+- Add other useful functions to the `use_apex_HGBDT.ipynb` notebook like a mode for image or video source, choose their own colors for evaluation, the patch and stride size and many more.
 
