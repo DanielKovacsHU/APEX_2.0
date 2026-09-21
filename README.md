@@ -312,7 +312,7 @@ Another comparison is demonstrating that the more complex model has the ability 
 
 </p>
 
-The last comparison shows a very difficult classification problem. Image took at 10km height, has lower positioned high density `clouds` and higher low density ones. The model correctly recognize the wing of the plane as `other` and the higher density `clouds` most part (wrongly assumes the dark spot inside it as `other`). Also APEX 2.0 successfully recognizes, that the sun is not a bright `cloud` or `sky` part, but something in the `other` category. The sun surrounding is correctly recognized as `clouds` and so does the `sky` part below it. At higher parts the model struggles and misclassify the `clouds` to `sky` and `other` class.
+The last comparison shows a very difficult classification problem. The image was took at 10km height, has lower positioned high density `clouds` and higher low density ones. The model correctly recognize the wing of the plane as `other` and the higher density `clouds` most part (wrongly assumes the dark spot inside it as `other`). Also APEX 2.0 successfully recognizes, that the sun is not a bright `cloud` or `sky` part, but something in the `other` category. The sun surrounding is correctly recognized as `clouds` and so does the `sky` part below it. At higher parts the model struggles and misclassify the `clouds` to `sky` and `other` class.
 
 ## 6. Future Improvements
 
